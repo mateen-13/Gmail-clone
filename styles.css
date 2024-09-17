@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f1f3f4;
+}
+
+.gmail-container {
+  display: flex;
+  height: 100vh;
+}
+/* gmail */
+/* .gmail {
+  color: rgb(92, 91, 91);
+  margin-left: 50%;
+  margin-bottom: 10px;
+} */
+/*  */
+/* Sidebar */
+.logo {
+  text-align: center;
+  /* background-color: #444; */
+
+  /* margin-bottom: 20px; */
+}
+
+.logo img {
+  background-color: #444;
+  width: 120px; /* Adjust size as needed */
+  height: auto;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #ffffff;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.compose-button {
+  margin-bottom: 20px;
+
+  text-align: left;
+}
+
+.compose-button button {
+  background-color: #0b57d0;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.compose-button button:hover {
+  background-color: #0a47ba;
+}
+
+.sidebar-menu {
+  list-style: none;
+}
+
+.sidebar-menu li {
+  padding: 10px 0;
+  color: #444;
+  cursor: pointer;
+}
+
+.sidebar-menu li:hover {
+  background-color: #f1f3f4;
+  padding-left: 10px;
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: #e3ebef;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar input {
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #f4f1f1;
+  border-radius: 4px;
+}
+
+.top-bar button {
+  background-color: #0b57d0;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.top-bar button:hover {
+  background-color: #0a47ba;
+}
+
+/* Email List */
+.email-list {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f3f1f1;
+  border-radius: 25px;
+}
+
+.email-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+}
+
+.email-item:hover {
+  background-color: #f9f9f9;
+}
+
+.email-sender,
+.email-subject,
+.email-preview {
+  width: 30%;
+}
+
+.email-sender {
+  font-weight: bold;
+}
+
+.email-subject {
+  color: #444;
+}
+
+.email-preview {
+  color: #888;
+}
+
+/*  */
+.sidebar-menu {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar-menu li {
+  padding: 10px 0;
+  color: #444;
+  cursor: pointer;
+  position: relative;
+}
+
+/* More menu dropdown */
+.more-menu {
+  position: relative;
+}
+
+.more-dropdown {
+  list-style: none;
+  padding-left: 0;
+  display: none; /* Hidden by default */
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.more-dropdown li {
+  padding: 8px 0;
+  color: #666;
+}
+
+.more-dropdown li:hover {
+  background-color: #f1f3f4;
+  padding-left: 10px;
+}
+
+/* Show dropdown on hover */
+.more-menu:hover .more-dropdown {
+  display: block; /* Display the dropdown when hovering over "More" */
+}
+
+/* Sidebar hover effect */
+.sidebar-menu li:hover {
+  background-color: #f1f3f4;
+  padding-left: 10px;
+}
